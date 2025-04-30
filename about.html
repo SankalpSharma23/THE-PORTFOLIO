@@ -1,38 +1,58 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>About Me</title>
   </head>
   <body>
+    <!-- Floating background elements -->
+    <div class="floating-shapes">
+      <div class="shape circle"></div>
+      <div class="shape triangle"></div>
+      <div class="shape square"></div>
+      <div class="shape circle" style="left:80%; top:70%; width:60px; height:60px;"></div>
+      <div class="shape triangle" style="left:20%; top:40%; animation-delay:8s;"></div>
+    </div>
+
     <div class="navbar">
       <img class="logo" src="img/portfolio--img-removebg-preview.png" />
       <nav>
         <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="skill.html">Skill</a></li>
-          <li><a href="project.html">Projects</a></li>
-          <li><a href="contact.html">Contact me</a></li>
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About Me</a></li>
+          <li><a href="skill.html" class="nav-link">Skill</a></li>
+          <li><a href="project.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact me</a></li>
         </ul>
       </nav>
     </div>
-    <!-- ////////////////////////////////////////////////// about section start ////////////////////////////////////////////////////////////////////////////////////////////// -->
 
+    <!-- About section -->
     <div class="about_me">
       <h2 class="about">About Me</h2>
+      <div class="confetti"></div>
     </div>
 
     <div class="card">
-      <div class="imge_card"><img src="img/img.png" class="about_image" /></div>
+      <div class="imge_card">
+        <div class="photo-container">
+          <img src="img/img.png" class="about_image" />
+          <div class="photo-frame"></div>
+          <div class="tech-icons">
+            <i class="fab fa-html5" style="color: #e34f26;"></i>
+            <i class="fab fa-css3-alt" style="color: #2965f1;"></i>
+            <i class="fab fa-js" style="color: #f7df1e;"></i>
+            <i class="fab fa-react" style="color: #61dafb;"></i>
+          </div>
+        </div>
+      </div>
 
       <div class="text_about">
         <h3 class="about_head">
-          <span class="rainbow">I am a skilled web designer and engineer</span>
+          <span class="rainbow typing-text">I am a skilled web designer and engineer</span>
         </h3>
         <p class="about_text">
           My passion lies in creating captivating website designs and
@@ -41,9 +61,9 @@
           creativity to produce visually appealing and user-friendly websites.
           Throughout my career, I have developed a deep understanding of user
           experience
-          <span class="rainbow"><abbr title="User Interface.">(UI)</abbr></span>
+          <span class="rainbow tooltip"><abbr title="User Interface.">(UI)</abbr></span>
           and user interface
-          <span class="rainbow"
+          <span class="rainbow tooltip"
             ><abbr title="User Experience Design">(UX)</abbr></span
           >
           principles. By putting myself in the shoes of the end-users, I strive
@@ -51,67 +71,24 @@
           a well-designed website should not only look visually appealing but
           also provide a smooth and enjoyable interaction for visitors.
         </p>
+        
+        <div class="fun-facts">
+          <h4 class="facts-title">Fun Facts About Me:</h4>
+          <ul class="facts-list">
+            <li><i class="fas fa-coffee"></i> Coffee enthusiast</li>
+            <li><i class="fas fa-music"></i> Music lover</li>
+            <li><i class="fas fa-paw"></i> Pet person</li>
+            <li><i class="fas fa-gamepad"></i> Casual gamer</li>
+          </ul>
+        </div>
       </div>
     </div>
-    <!-- ////////////////////////////////////////////////// about section end ////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Floating action button -->
+    <div class="fab">
+      <i class="fas fa-rocket"></i>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-
-    <title>About Me</title>
-  </head>
-  <body>
-    <div class="navbar">
-      <img class="logo" src="img/portfolio--img-removebg-preview.png" />
-      <nav>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="skill.html">Skill</a></li>
-          <li><a href="project.html">Projects</a></li>
-          <li><a href="contact.html">Contact me</a></li>
-        </ul>
-      </nav>
-    </div>
-    <!-- ////////////////////////////////////////////////// about section start ////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-    <div class="about_me">
-      <h2 class="about">About Me</h2>
-    </div>
-
-    <div class="card">
-      <div class="imge_card"><img src="img/img.png" class="about_image" /></div>
-
-      <div class="text_about">
-        <h3 class="about_head">
-          <span class="rainbow">I am a skilled web designer and engineer</span>
-        </h3>
-        <p class="about_text">
-          My passion lies in creating captivating website designs and
-          implementing them through frontend development. I take pride in
-          staying up-to-date with current design trends and leveraging my
-          creativity to produce visually appealing and user-friendly websites.
-          Throughout my career, I have developed a deep understanding of user
-          experience
-          <span class="rainbow"><abbr title="User Interface.">(UI)</abbr></span>
-          and user interface
-          <span class="rainbow"
-            ><abbr title="User Experience Design">(UX)</abbr></span
-          >
-          principles. By putting myself in the shoes of the end-users, I strive
-          to create intuitive and seamless browsing experiences. I believe that
-          a well-designed website should not only look visually appealing but
-          also provide a smooth and enjoyable interaction for visitors.
-        </p>
-      </div>
-    </div>
-    <!-- ////////////////////////////////////////////////// about section end ////////////////////////////////////////////////////////////////////////////////////////////// -->
-  </body>
-</html>
->>>>>>> a18cbbd693e633255590ad40afdbcd3c8e5269af
