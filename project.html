@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
   <body>
     <div class="navbar">
@@ -24,7 +25,11 @@
         </ul>
       </nav>
     </div>
-    <div class="head"><h1 class="project">Project</h1></div>
+    
+    <div class="head">
+      <h1 class="project animate__animated animate__fadeInDown">Project</h1>
+      <div class="subtitle animate__animated animate__fadeIn animate__delay-1s">My Creative Works</div>
+    </div>
 
     <div class="wrapper">
       <!-- filter Items -->
@@ -40,53 +45,81 @@
       <!-- filter Images -->
       <div class="gallery">
         <div
-          class="image"
+          class="image animate__animated animate__fadeIn animate__delay-1s"
           data-name="AI"
           data-link="https://github.com/HSV-AI/product-recommendation"
         >
           <span><img src="img/ai.png" alt="" /></span>
+          <div class="project-overlay">
+            <h3>AI Product Recommendation</h3>
+            <p>Advanced AI system for personalized suggestions</p>
+          </div>
         </div>
         <div
-          class="image"
+          class="image animate__animated animate__fadeIn animate__delay-1s"
           data-name="mobile app"
           data-link="https://github.com/topics/mobile-design?o=desc"
         >
           <span><img src="img/mobile app.jpg" alt="" /></span>
+          <div class="project-overlay">
+            <h3>Mobile App Design</h3>
+            <p>Beautiful and functional mobile interfaces</p>
+          </div>
         </div>
         <div
-          class="image"
+          class="image animate__animated animate__fadeIn animate__delay-1s"
           data-name="ML"
           data-link="https://github.com/kennybossy/Heart-Disease-Prediction"
         >
           <span><img src="img/ml.jpg" alt="" /></span>
+          <div class="project-overlay">
+            <h3>Heart Disease Prediction</h3>
+            <p>ML model for early diagnosis</p>
+          </div>
         </div>
         <div
-          class="image"
+          class="image animate__animated animate__fadeIn animate__delay-2s"
           data-name="Web Design"
           data-link="https://github.com/topics/website-design"
         >
           <span><img src="img/web design.jpg" alt="" /></span>
+          <div class="project-overlay">
+            <h3>Web Design</h3>
+            <p>Modern and responsive websites</p>
+          </div>
         </div>
         <div
-          class="image"
+          class="image animate__animated animate__fadeIn animate__delay-2s"
           data-name="ML"
           data-link="https://github.com/topics/credit-card-fraud-detection"
         >
           <span><img src="img/ml2.jpg" alt="" /></span>
+          <div class="project-overlay">
+            <h3>Fraud Detection</h3>
+            <p>ML system for transaction security</p>
+          </div>
         </div>
         <div
-          class="image"
+          class="image animate__animated animate__fadeIn animate__delay-2s"
           data-name="mobile app"
           data-link="https://github.com/topics/planner-app"
         >
           <span><img src="img/mobile app2.jpg" alt="" /></span>
+          <div class="project-overlay">
+            <h3>Planner App</h3>
+            <p>Productivity application</p>
+          </div>
         </div>
         <div
-          class="image"
+          class="image animate__animated animate__fadeIn animate__delay-3s"
           data-name="Web Design"
           data-link="https://github.com/topics/web-design"
         >
           <span><img src="img/web design 2.png" alt="" /></span>
+          <div class="project-overlay">
+            <h3>Creative Web Design</h3>
+            <p>Unique and engaging websites</p>
+          </div>
         </div>
       </div>
     </div>
@@ -96,7 +129,6 @@
         <span class="title">
           Project Category:
           <p></p>
-
           <a class="redirect-btn" href="#" target="_blank">
             <div class="button">Git Hub</div>
           </a>
@@ -106,6 +138,12 @@
       <div class="image-box"><img src="" alt="" /></div>
     </div>
     <div class="shadow"></div>
+    
+    <!-- Floating back-to-top button -->
+    <div class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+    
     <script src="index.js"></script>
   </body>
 </html>
