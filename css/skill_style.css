@@ -1,3 +1,191 @@
+/* Add this at the top of your CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Updated body styles */
+body {
+  background: linear-gradient(135deg, #fdafe0, #afc8ff);
+  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+/* Keep your existing navbar styles exactly as they are */
+
+/* Skills section enhancements */
+.skill {
+  width: 500px;
+  margin: 60px auto;
+  color: #fff;
+  padding: 30px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+}
+
+.skill h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  position: relative;
+  color: #2d3436;
+}
+
+.skill h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #fdafe0, #afc8ff);
+  border-radius: 2px;
+}
+
+#write {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #2d3436;
+  font-weight: 500;
+}
+
+.skill li {
+  margin: 25px 0;
+  padding: 15px;
+  list-style-type: none;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.skill li:hover {
+  transform: translateX(10px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.skill li h3 {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 10px 0;
+  padding-bottom: 5px;
+  font-size: 1.2rem;
+  color: #2d3436;
+}
+
+/* Animated underline effect */
+.skill li h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #fdafe0, #afc8ff);
+  transition: width 0.3s ease;
+}
+
+.skill li:hover h3::after {
+  width: 100%;
+}
+
+.bar {
+  background: rgba(53, 59, 72, 0.7);
+  display: block;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.bar span {
+  height: 100%;
+  float: left;
+  background: linear-gradient(90deg, #fdafe0, #afc8ff);
+  position: relative;
+  overflow: hidden;
+}
+
+.bar span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.1)
+  );
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.per {
+  float: right;
+  margin-top: -25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2d3436;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keep your existing animation keyframes for the bars */
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+  .skill {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  .skill li {
+    margin: 20px 0;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .skill h1 {
+    font-size: 2rem;
+  }
+  
+  #write {
+    font-size: 0.9rem;
+  }
+}
 body {
   background: linear-gradient(90deg, #fdafe0, #afc8ff);
   background-repeat: no-repeat;
@@ -35,6 +223,29 @@ nav ul li a {
   font-size: 29px;
   transition: 0.4s;
   font-weight: 550;
+  position: relative; /* Add this for the underline positioning */
+  padding-bottom: 5px; /* Add some space for the underline */
+}
+nav ul li a:hover {
+  color: white;
+  font-size: 30px;
+}
+
+/* Add the animated underline effect */
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  transition: width 0.3s ease;
+  border-radius: 1px;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
 }
 nav ul li a:hover {
   color: white;
@@ -212,3 +423,4 @@ li:hover {
     margin-top: 30px;
   }
 }
+
