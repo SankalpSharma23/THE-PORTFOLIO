@@ -1,0 +1,214 @@
+body {
+  background: linear-gradient(90deg, #fdafe0, #afc8ff);
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  position: relative;
+  background-size: cover;
+}
+#icon {
+  width: 30px;
+  cursor: pointer;
+}
+.navbar {
+  width: 100%;
+  height: 64%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  flex: 1;
+  padding-left: 60px;
+  margin: 2px 10px 2px 10px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 8vh;
+}
+nav ul li a {
+  color: #232d60;
+  font-style: bold;
+  text-decoration: none;
+  font-size: 29px;
+  transition: 0.4s;
+  font-weight: 550;
+}
+nav ul li a:hover {
+  color: white;
+  font-size: 30px;
+}
+.skill_education {
+  display: flex;
+  flex-direction: row;
+}
+h1 {
+  text-align: center;
+}
+p {
+  font-size: 2.7vh;
+}
+h3 {
+  margin: 5px;
+  color: white;
+}
+
+.skill {
+  width: 500px;
+  margin: 60px auto;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgb(0, 0, 0, 0.25), 0 10px 10px rgb(0, 0, 0, 0.22);
+}
+.skill li {
+  margin: 20px 0;
+  padding: 10px;
+  list-style-type: none;
+  transition: 1s;
+}
+
+li:hover {
+  transform: scale(1.07);
+}
+.bar {
+  background: #353b48;
+  display: block;
+  height: 20px;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), o 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 0.1);
+}
+.bar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span {
+  height: 20px;
+  float: left;
+  background: linear-gradient(90deg, #fdafe0, #afc8ff);
+  margin-right: 3%;
+}
+.per {
+  animation-name: display;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
+@keyframes display {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.html {
+  width: 90%;
+  animation: html 3s;
+}
+.CSS {
+  width: 90%;
+  animation: CSS 3s;
+}
+.Javascript {
+  width: 70%;
+  animation: Javascript 3s;
+}
+.PHP {
+  width: 60%;
+  animation: PHP 3s;
+}
+.Python {
+  width: 85%;
+  animation: Python 3s;
+}
+.C {
+  width: 90%;
+  animation: C 3s;
+}
+.React {
+  width: 90%;
+  animation: React 3s;
+}
+.MongoDB {
+  width: 70%;
+  animation: MongoDB 3s;
+}
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes CSS {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes Javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes PHP {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes Python {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes C {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes React {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes MongoDb {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  nav ul li a {
+    font-size: 20px;
+  }
+  nav ul li {
+    display: block;
+    margin-bottom: 5px;
+  }
+  ul {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <img class="logo" src="img/portfolio--img-removebg-preview.png" />
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="skill.html">Skill</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="contact.html">Contact me</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="head"><h1 class="project">Project</h1></div>
+
+    <div class="wrapper">
+      <!-- filter Items -->
+      <nav>
+        <div class="items">
+          <span class="item active" data-name="all">All</span>
+          <span class="item" data-name="AI">AI</span>
+          <span class="item" data-name="ML">ML</span>
+          <span class="item" data-name="Web Design">Web design</span>
+          <span class="item" data-name="mobile app">Mobile app</span>
+        </div>
+      </nav>
+      <!-- filter Images -->
+      <div class="gallery">
+        <div
+          class="image"
+          data-name="AI"
+          data-link="https://github.com/HSV-AI/product-recommendation"
+        >
+          <span><img src="img/ai.png" alt="" /></span>
+        </div>
+        <div
+          class="image"
+          data-name="mobile app"
+          data-link="https://github.com/topics/mobile-design?o=desc"
+        >
+          <span><img src="img/mobile app.jpg" alt="" /></span>
+        </div>
+        <div
+          class="image"
+          data-name="ML"
+          data-link="https://github.com/kennybossy/Heart-Disease-Prediction"
+        >
+          <span><img src="img/ml.jpg" alt="" /></span>
+        </div>
+        <div
+          class="image"
+          data-name="Web Design"
+          data-link="https://github.com/topics/website-design"
+        >
+          <span><img src="img/web design.jpg" alt="" /></span>
+        </div>
+        <div
+          class="image"
+          data-name="ML"
+          data-link="https://github.com/topics/credit-card-fraud-detection"
+        >
+          <span><img src="img/ml2.jpg" alt="" /></span>
+        </div>
+        <div
+          class="image"
+          data-name="mobile app"
+          data-link="https://github.com/topics/planner-app"
+        >
+          <span><img src="img/mobile app2.jpg" alt="" /></span>
+        </div>
+        <div
+          class="image"
+          data-name="Web Design"
+          data-link="https://github.com/topics/web-design"
+        >
+          <span><img src="img/web design 2.png" alt="" /></span>
+        </div>
+      </div>
+    </div>
+    <!-- fullscreen img preview box -->
+    <div class="preview-box">
+      <div class="details">
+        <span class="title">
+          Project Category:
+          <p></p>
+
+          <a class="redirect-btn" href="#" target="_blank">
+            <div class="button">Git Hub</div>
+          </a>
+        </span>
+        <span class="icon fas fa-times"></span>
+      </div>
+      <div class="image-box"><img src="" alt="" /></div>
+    </div>
+    <div class="shadow"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
