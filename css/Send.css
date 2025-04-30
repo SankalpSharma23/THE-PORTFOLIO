@@ -1,38 +1,119 @@
-.container {
-  margin: 10% 35%;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-color: black;
-  border-width: 20px;
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #4d44db;
+  --success-color: #4BB543;
+  --text-color: #333;
+  --light-color: #f8f9fa;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-.Img {
-  width: 30%;
-  padding-left: 35%;
-  padding-top: 5%;
-  padding-bottom: 9%;
-}
-.text {
-  padding-left: 33%;
-  font-size: 30px;
-  font-weight: 900;
-}
+
 body {
+  font-family: 'Poppins', sans-serif;
   background-image: linear-gradient(90deg, #fdafe0, #afc8ff);
-}
-.back_button {
-  border-radius: 50%;
-  background-color: black;
-}
-.back_button:hover {
-  color: black;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
-  margin-bottom: 10px;
-}
-.box {
+  min-height: 100vh;
+  margin: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.success-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.success-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.success-card:hover {
+  transform: translateY(-5px);
+}
+
+.check-circle {
+  margin: 0 auto 25px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.checkmark-circle {
+  stroke: var(--success-color);
+  stroke-width: 2;
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-miterlimit: 10;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark-check {
+  transform-origin: 50% 50%;
+  stroke: var(--success-color);
+  stroke-width: 2;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.success-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--success-color);
+}
+
+.success-message {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.back-button {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(108, 99, 255, 0.3);
+}
+
+.back-button svg {
+  margin-right: 8px;
+}
+
+.back-button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(108, 99, 255, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .success-card {
+    padding: 30px 20px;
+  }
+  
+  .success-title {
+    font-size: 24px;
+  }
 }
