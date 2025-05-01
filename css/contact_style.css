@@ -176,15 +176,17 @@ a {
   outline: none;
   border: none;
   cursor: pointer;
-  color: #fff;
   text-align: center;
   background: #afc8ff;
   box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
   transition: 0.5s;
-  text-decoration: none;
 }
 .submit-button:hover {
   background: #fdafe0;
+}
+.submit-button{
+  text-decoration: none;
+  color:white;
 }
 @media only screen and (max-width: 1250px) {
   nav ul li a {
