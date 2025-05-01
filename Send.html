@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/Send.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <title>Message Sent Successfully</title>
@@ -19,6 +20,28 @@
       </div>
       <h1 class="success-title">Message Sent Successfully!</h1>
       <p class="success-message">Thank you for contacting us. We'll get back to you soon.</p>
+      
+      <div class="social-links">
+        <p>Connect with us:</p>
+        <div class="social-icons">
+          <a href="https://twitter.com" class="social-icon" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://youtube.com" class="social-icon" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://facebook.com" class="social-icon" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com" class="social-icon" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://linkedin.com" class="social-icon" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+      
       <a href="home.html" class="back-button">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="19" y1="12" x2="5" y2="12"></line>
@@ -28,24 +51,6 @@
       </a>
     </div>
   </div>
-  <script>// Confetti effect
-    document.addEventListener('DOMContentLoaded', () => {
-      const confettiContainer = document.querySelector('.confetti-container');
-      const colors = ['#6c63ff', '#4BB543', '#ff6b6b', '#feca57', '#5f27cd'];
-      
-      for (let i = 0; i < 100; i++) {
-        const confetti = document.createElement('div');
-        confetti.className = 'confetti';
-        confetti.style.left = Math.random() * 100 + 'vw';
-        confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
-        confetti.style.animationDelay = (Math.random() * 5) + 's';
-        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-        confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
-        confetti.style.opacity = Math.random() * 0.7 + 0.3;
-        confettiContainer.appendChild(confetti);
-      }
-  
-
-    });</script>
+  <script src="js/confetti.js"></script>
 </body>
 </html>
