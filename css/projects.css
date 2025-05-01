@@ -52,10 +52,6 @@ nav ul li a:hover {
   text-align: center;
   font-size: 6vh;
   margin-top: 13vh;
-  animation-name: ab;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-direction: 2s;
 }
 
 @keyframes ab {
