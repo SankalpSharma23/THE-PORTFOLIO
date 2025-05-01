@@ -8,6 +8,7 @@
   <title>Message Sent Successfully</title>
 </head>
 <body>
+  <div class="confetti-container"></div>
   <div class="success-container">
     <div class="success-card">
       <div class="check-circle">
@@ -27,5 +28,24 @@
       </a>
     </div>
   </div>
+  <script>// Confetti effect
+    document.addEventListener('DOMContentLoaded', () => {
+      const confettiContainer = document.querySelector('.confetti-container');
+      const colors = ['#6c63ff', '#4BB543', '#ff6b6b', '#feca57', '#5f27cd'];
+      
+      for (let i = 0; i < 100; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.left = Math.random() * 100 + 'vw';
+        confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
+        confetti.style.animationDelay = (Math.random() * 5) + 's';
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+        confetti.style.opacity = Math.random() * 0.7 + 0.3;
+        confettiContainer.appendChild(confetti);
+      }
+  
+
+    });</script>
 </body>
 </html>
