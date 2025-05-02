@@ -33,11 +33,14 @@ THE-PORTFOLIO/
 ├── img/                 # Images used in the portfolio
 
 └── README.md            # Project documentation
+
 🛠 Technologies Used
+
 HTML
 
 CSS (with animations)
 
 JavaScript
+
 📬 Contact
 You can conatct me on my email sankalpsharma554@gmail.com
