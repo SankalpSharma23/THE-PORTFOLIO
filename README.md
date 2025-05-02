@@ -13,15 +13,25 @@ Dynamic Updates: Regularly updated with new features and improvements.
 
 📂 File Structure
 THE-PORTFOLIO/
+
 ├── home.html            # Home page
+
 ├── about.html           # About page with animations
+
 ├── skill.html           # Skills section
+
 ├── project.html         # Projects showcase
+
 ├── contact.html         # Contact information
+
 ├── Send.html            # Form submission page
+
 ├── Send.css             # Styles for Send.html
+
 ├── index.js             # JavaScript functionality
+
 ├── img/                 # Images used in the portfolio
+
 └── README.md            # Project documentation
 🛠 Technologies Used
 HTML
