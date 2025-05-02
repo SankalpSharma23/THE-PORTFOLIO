@@ -1,6 +1,6 @@
 # THE-PORTFOLIO
 📌 Overview
-This repository contains my personal portfolio website, showcasing my skills, projects, and contact information. The portfolio is designed to be responsive and includes animations for an enhanced user experience.
+This repository contains my college project portfolio website, showcasing my skills, projects, and contact information. The portfolio is designed to be responsive and includes animations for an enhanced user experience.
 
 🚀 Features
 Responsive Design: Works on all device sizes.
